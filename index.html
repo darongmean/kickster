@@ -1,12 +1,39 @@
----
-layout: default
-title: "Worry-free deploying to GitHub Pages using Jekyll"
-description: "Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages."
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Kickster | Worry-free deploying to GitHub Pages using Jekyll</title>
+  <meta name="description" content="Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<header>
-  <a href="{{ site.baseurl }}" title="Kickster" class="header-logo">
-    <img src="{% asset_path logo-white.png %}" alt="Kickster">
+  <meta property="og:title" content="Worry-free deploying to GitHub Pages using Jekyll">
+  <meta property="og:url" content="http://kickster.nielsenramon.com">
+  <meta property="og:description" content="Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.">
+  <meta property="og:site_name" content="Kickster">
+  <meta property="og:image" content="/assets/og-image.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://kickster.nielsenramon.com">
+  <meta name="twitter:title" content="Worry-free deploying to GitHub Pages using Jekyll">
+  <meta name="twitter:description" content="Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.">
+  <meta name="twitter:image" content="/assets/og-image.jpg">
+
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,700|Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+
+  <link type="text/css" rel="stylesheet" href="/assets/application.css">
+</head>
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong>
+      browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.</p>
+  <![endif]-->
+
+  <header>
+  <a href="/" title="Kickster" class="header-logo">
+    <img src="/assets/logo-white.png" alt="Kickster">
   </a>
   <br>
   <h4>Worry-free deploying to GitHub Pages using Jekyll</h4>
@@ -37,15 +64,14 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
 
       <div class="grid-cell with-6col is-middle">
         <div class="section-info is-last">
-          {% highlight shell %}
-# Installation
-~ $ gem install kickster
-~ $ kickster new site_name
-~ $ cd site_name
-~ $ bin/setup
+          <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Installation</span>
+~ <span class="nv">$ </span>gem install kickster
+~ <span class="nv">$ </span>kickster new site_name
+~ <span class="nv">$ </span><span class="nb">cd </span>site_name
+~ <span class="nv">$ </span>bin/setup
 
-# Deployment
-~ $ bin/deploy{% endhighlight %}
+<span class="c"># Deployment</span>
+~ <span class="nv">$ </span>bin/deploy</code></pre></figure>
         </div>
       </div>
     </div>
@@ -55,7 +81,7 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
     <div class="grid grid-centered">
       <div class="grid-cell is-centered">
         <div class="section-image">
-          <img src="{% asset_path powered.png %}" alt="Powered by Circle CI and GitHub Pages">
+          <img src="/assets/powered.png" alt="Powered by Circle CI and GitHub Pages">
         </div>
       </div>
 
@@ -123,3 +149,14 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
     </div>
   </div>
 </footer>
+
+
+  <script type="text/javascript" src="/assets/vendor.js"></script>
+  <script type="text/javascript" src="/assets/application.js"></script>
+
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-28631876-2','auto');ga('send','pageview')
+  </script>
+</body>
+</html>
